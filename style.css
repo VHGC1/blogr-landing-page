@@ -17,10 +17,33 @@ a {
 }
 
 .btn {
-  padding: 15px;
+  padding: 10px 15px;
   border: 0;
   border-radius: 25px;
 }
+
+/* HEADER */
+
+header {
+  background: url(assets/bg-pattern-intro.svg);
+  background-image: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  border-radius: 0 0 0 75px;
+}
+
+/*
+header{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(assets/bg-pattern-intro.svg);
+  background-position: center;
+  background-size: 150%;
+  padding: 4rem 10rem;
+  border-bottom-left-radius: 6rem;
+  background-repeat: no-repeat;
+  background-color: hsl(353, 100%, 62%);
+}
+*/
 
 /* NAVBAR */
 
@@ -107,35 +130,41 @@ nav ul {
 .btn_header a:not(:first-child) {
   background-color: white;
   color: hsl(356, 100%, 66%);
-  padding: 10px 15px;
   font-weight: bold;
 }
 
-/* HEADER */
+/* MAIN HEADER */
 
-header {
-  background: url(assets/bg-pattern-intro.svg);
-  background-image: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-  border-radius: 0 0 0 75px;
-}
-
-/*
-header{
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background: url(assets/bg-pattern-intro.svg);
-  background-position: center;
-  background-size: 150%;
-  padding: 4rem 10rem;
-  border-bottom-left-radius: 6rem;
-  background-repeat: no-repeat;
-  background-color: hsl(353, 100%, 62%);
-}
-*/
 .container {
   display: flex;
   flex-direction: column;
   place-items: center;
-  padding: 100px;
+  padding: 100px 0 150px;
+  font-family: 'Overpass';
+}
+
+h1 {
+  color: var(--white);
+  font-size: 65px;
+}
+
+p {
+  font-size: 21px;
+  color: var(--white);
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.btn_container {
+  margin-top: 40px;
+}
+
+.btn_container input {
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn_container:first-child {
+  color: hsl(356, 100%, 66%);
 }
