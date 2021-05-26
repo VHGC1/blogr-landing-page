@@ -49,6 +49,11 @@ nav ul {
   padding: 0 15px;
 }
 
+.arrow_down:hover {
+  transform: rotate(-180deg);
+  transition: 1s;
+}
+
 /* HEADER */
 
 header {
