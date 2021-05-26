@@ -29,19 +29,12 @@ header {
   background-image: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   border-radius: 0 0 0 75px;
 }
-
 /*
 header{
-  width: 100%;
-  height: 100vh;
-  position: relative;
   background: url(assets/bg-pattern-intro.svg);
   background-position: center;
-  background-size: 150%;
-  padding: 4rem 10rem;
-  border-bottom-left-radius: 6rem;
-  background-repeat: no-repeat;
   background-color: hsl(353, 100%, 62%);
+  background-image: url(assets/bg-pattern-intro.svg);
 }
 */
 
@@ -133,6 +126,13 @@ nav ul {
   font-weight: bold;
 }
 
+.btn_header a:not(:first-child):hover {
+  background-color: hsl(356, 100%, 66%);
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: 1s;  
+}
+
 /* MAIN HEADER */
 
 .container {
@@ -176,4 +176,17 @@ nav ul {
 .btn_container a:not(:first-child) {
   border: 1px solid var(--white);
   margin-left: 10px;
+}
+
+.btn_container a:first-child:hover {
+  background-color: hsl(356, 100%, 66%);
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: 1s;
+}
+
+.btn_container a:not(:first-child):hover {
+  background-color: var(--white);
+  color: hsl(356, 100%, 66%);
+  transition: 1s;
 }
