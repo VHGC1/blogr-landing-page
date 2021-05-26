@@ -143,12 +143,12 @@ nav ul {
   font-family: 'Overpass';
 }
 
-h1 {
+.container h1 {
   color: var(--white);
   font-size: 65px;
 }
 
-p {
+.container p {
   font-size: 21px;
   color: var(--white);
   font-weight: bold;
@@ -156,15 +156,24 @@ p {
 }
 
 .btn_container {
-  margin-top: 40px;
+  margin-top: 60px;
+  justify-content: space-between;
 }
 
-.btn_container input {
+.btn_container a {
   font-family: 'Ubuntu';
   font-weight: bold;
   font-size: 16px;
+  padding: 15px 20px;
 }
 
-.btn_container:first-child {
+.btn_container a:first-child {
   color: hsl(356, 100%, 66%);
+  background-color: var(--white);
+  margin-right: 10px;
+}
+
+.btn_container a:not(:first-child) {
+  border: 1px solid var(--white);
+  margin-left: 10px;
 }
