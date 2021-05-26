@@ -2,6 +2,7 @@
 
 :root {
   --white: hsl(0, 0%, 100%);
+  --light-red: hsl(356, 100%, 66%);
 }
 
 * {
@@ -22,21 +23,13 @@ a {
   border-radius: 25px;
 }
 
-/* HEADER */
+/* HEADER BACKGROUND */
 
 header {
   background: url(assets/bg-pattern-intro.svg);
   background-image: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   border-radius: 0 0 0 75px;
 }
-/*
-header{
-  background: url(assets/bg-pattern-intro.svg);
-  background-position: center;
-  background-color: hsl(353, 100%, 62%);
-  background-image: url(assets/bg-pattern-intro.svg);
-}
-*/
 
 /* NAVBAR */
 
@@ -122,12 +115,12 @@ nav ul {
 
 .btn_header a:not(:first-child) {
   background-color: white;
-  color: hsl(356, 100%, 66%);
+  color: var(--light-red);
   font-weight: bold;
 }
 
 .btn_header a:not(:first-child):hover {
-  background-color: hsl(356, 100%, 66%);
+  background-color: var(--light-red);
   color: var(--white);
   border: 1px solid var(--white);
   transition: 1s;  
@@ -168,7 +161,7 @@ nav ul {
 }
 
 .btn_container a:first-child {
-  color: hsl(356, 100%, 66%);
+  color: var(--light-red);
   background-color: var(--white);
   margin-right: 10px;
 }
@@ -179,7 +172,7 @@ nav ul {
 }
 
 .btn_container a:first-child:hover {
-  background-color: hsl(356, 100%, 66%);
+  background-color: var(--light-red);
   color: var(--white);
   border: 1px solid var(--white);
   transition: 1s;
@@ -187,6 +180,6 @@ nav ul {
 
 .btn_container a:not(:first-child):hover {
   background-color: var(--white);
-  color: hsl(356, 100%, 66%);
+  color: var(--light-red);
   transition: 1s;
 }
