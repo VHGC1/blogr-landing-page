@@ -104,6 +104,13 @@ nav ul {
   font-weight: bold;
 }
 
+.btn_header a:not(:first-child) {
+  background-color: white;
+  color: hsl(356, 100%, 66%);
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
 /* HEADER */
 
 header {
