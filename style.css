@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Ubuntu:wght@400;700&display=swap');
+
 :root {
   --white: hsl(0, 0%, 100%);
 }
@@ -34,6 +36,9 @@ nav {
   justify-content: space-between;
   padding: 30px 0;
   color: var(--white);
+
+  font-family: 'Ubuntu';
+  font-weight: 500;
 }
 
 .nav_bar {
@@ -79,6 +84,24 @@ nav ul {
   display: flex;
   flex-direction: column;
   position: absolute;
+
+  background-color: var(--white);
+  border-radius: 5px;
+
+  padding: 25px 25px 25px 10px;
+}
+
+.dropdown_menu li {
+  margin-bottom: 10px;
+}
+
+.dropdown_menu a {
+  color: black;
+}
+
+.dropdown_menu a:hover {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* HEADER */
