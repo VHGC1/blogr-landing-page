@@ -237,6 +237,7 @@ nav li:hover .dropdown_menu {
     display: flex;
     flex-direction: column;
     margin: 15px;
+    padding-top: 20px;
   }
 
   .mobile_nav ul li{
@@ -248,17 +249,17 @@ nav li:hover .dropdown_menu {
 
   .dropdown_menu_mobile {
     display: none;
-    background-color: #c8c8c8;
+    background-color: #efeff1;
     border-radius: 5px;
   }
 
-  .dropdown_menu_mobile li {
-    margin: 15px 0;
+  .dropdown_menu_mobile ul:first-child {
+    margin-top: 15px;
   }
 
   .dropdown_menu_mobile ul li a{
     font-size: 18px;
-    color: hsl(208, 49%, 24%);
+    color: hsl(208, 49%, 24%) !important;
   }
 
   .mobile_nav ul li:hover .dropdown_menu_mobile{
