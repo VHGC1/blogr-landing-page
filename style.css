@@ -232,7 +232,7 @@ nav li:hover .dropdown_menu {
     background-color: var(--white);
     border-radius: 5px;
     width: 90%;
-    padding: 25px 0;
+    padding: 30px 0;
   }
 
   .mobile_nav ul {
@@ -243,6 +243,7 @@ nav li:hover .dropdown_menu {
   .mobile_nav ul li{
     list-style: none;
     font-size: 20px;
+    margin-bottom: 25px;
   }
 
   .dropdown_menu_mobile {
@@ -269,14 +270,36 @@ nav li:hover .dropdown_menu {
     color: rgb(97, 97, 97);
   }
 
+  .mobile_nav ul li:hover img {
+    transform: rotate(-180deg);
+    transition: .5s;
+  }
+
   .mobile_btn {
     display: flex;
     flex-direction: column;
+    font-size: 20px;
+    place-items: center;
+    
+  }
+
+  .btn {
+    width: fit-content;
+    font-family: 'Ubuntu';
+  }
+
+  .mobile_btn .btn_signup {
+    padding: 15px 45px;
+    background: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: var(--white) !important;
+    border-radius: 40px;
   }
 
   .container_home {
+    padding: 100px 25px 150px;
     text-align: center;
   }
+
 
   .container_home h1 {
     font-size: 30px;
@@ -285,7 +308,4 @@ nav li:hover .dropdown_menu {
   .container_home p {
     font-weight: 400;
   }
-
-
-
 }
