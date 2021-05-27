@@ -8,12 +8,11 @@
     <title>Blogr</title>
   </head>
   <body>
-    <header>
-      <div class="container_nav">
+    <section class="header">
+      <div class="container">
         <nav>
-          <div class="nav_bar">
-            <div class="logo"><img src="assets/logo.svg" alt="logo" /></div>
-            <ul>
+          <div class="logo"><img src="assets/logo.svg" alt="logo" /></div>
+            <ul class="nav">
               <li>
                 <a href="">Product</a>
                 <img
@@ -65,15 +64,17 @@
                 </div>
               </li>
             </ul>
-          </div>
+          
+          
           <div class="btn_header">
             <a class="btn" href="">Login</a>
             <a class="btn" href="">Sign Up</a>
           </div>
+
+          <a href=""><img src="assets/icon-hamburger.svg" id="mobilemenu" alt=""></a>
         </nav>
       </div>
-
-      <div class="container">
+      <div class="container_home">
         <h1>A modern publishing plataform</h1>
 
         <p>Grow your audience and build your online brand</p>
@@ -82,11 +83,92 @@
           <a class="btn" href="">Learn More</a>
         </div>
       </div>
-    </header>
+    </section class="header">
 
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="mobile_nav" id="mobilenav">
+      <ul>
+        <li>
+          <div>
+            <a>Product <img src="assets/icon-arrow-dark.svg" alt=""></a>
+          </div>
+          <div class="dropdown-menu-mobile">>
+            <ul>
+              <li><a href="">Overview</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Marketplace</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Integration</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a href="">Company <img src="assets/icon-arrow-dark.svg" alt=""></a>
+          </div>
+          <div class="dropdown-menu-mobile"></div>>
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Team</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Careers</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a href="">Connect <img src="assets/icon-arrow-dark.svg" alt=""></a>
+          </div>
+          <div class="dropdown-menu-mobile"></div>>
+            <ul>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Newsletter</a></li>
+              <li><a href="">Linkedin</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <div class="btn_header">
+        <a class="btn" href="">Login</a>
+        <a class="btn" href="">Sign Up</a>
+      </div>
+    </section>
+
+    <section class="overview">
+      
+        <h1>
+          Designed for the future
+        </h1>
+  
+        <div>
+          <div>
+            <h2>Introducing an extensible editor</h2>
+            <p>
+              Blogr feature an exceedingly intuitive interface which lets you focus
+              on one thing: creating content. The editor supports management of
+              multiple blogs and allows wasy manipulation of embeds such as images,
+              videos, and Markdown. Extensibility with plugins and themes provide
+              easy ways to add functionality or change the looks of a bolg.
+            </p>
+          </div>
+          <div>
+            <h2>Robust content management</h2>
+            <p>
+              Flexible content management enables users to easily move through
+              posts. Increse the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality. you're in
+              full control.
+            </p>
+          </div>
+        </div>
+      
+    </section>
+    <section>
+      
+    </section>
+    <section>
+      
+    </section>
 
     <footer></footer>
   </body>
