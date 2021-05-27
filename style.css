@@ -115,15 +115,13 @@ nav li:hover .dropdown_menu {
   font-weight: bold;
 }
 
-
-
-.btn_header a:not(:first-child) {
+.btn_header .btn_signup_header {
   background-color: white;
   color: var(--light-red);
   font-weight: bold;
 }
 
-.btn_header a:not(:first-child):hover {
+.btn_header .btn_signup_header:hover {
   background-color: var(--light-red);
   color: var(--white);
   border: 1px solid var(--white);
@@ -280,7 +278,6 @@ nav li:hover .dropdown_menu {
     flex-direction: column;
     font-size: 20px;
     place-items: center;
-    
   }
 
   .btn {
@@ -291,15 +288,23 @@ nav li:hover .dropdown_menu {
   .mobile_btn .btn_signup {
     padding: 15px 45px;
     background: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    color: var(--white) !important;
+    color: var(--white);
     border-radius: 40px;
+  }
+
+  .mobile_btn .btn_login:hover {
+
+  }
+
+  .mobile_btn .btn_signup:hover {
+    background-color: transparent;
+    border: 1px solid hsl(356, 100%, 66%);
   }
 
   .container_home {
     padding: 100px 25px 150px;
     text-align: center;
   }
-
 
   .container_home h1 {
     font-size: 30px;
