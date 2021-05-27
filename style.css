@@ -298,14 +298,16 @@ nav li:hover .dropdown_menu {
 
   .btn_login {
     margin-bottom: 10px;
+    padding: 15px 50px;
+    background: white;
+    border-radius: 40px;
+    border: 1px solid var(--white);
   }
 
   .mobile_btn .btn_login:hover {
     border: 1px solid hsl(356, 100%, 66%);
     color: hsl(356, 100%, 66%);
-    padding: 15px 50px;
-    background: white;
-    border-radius: 40px;
+    
     transition: 1s;
   }
 
