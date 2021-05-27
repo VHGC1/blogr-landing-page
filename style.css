@@ -229,7 +229,25 @@ nav li:hover .dropdown_menu {
     display: block;
     text-align: center;
     top: 8.5rem;
-    background-color: black;
+    background-color: var(--white);
+    border-radius: 5px;
+    width: 90%;
+  }
+
+  .mobile_nav ul li{
+    list-style: none;
+  }
+
+  .dropdown_menu_mobile {
+    display: none;
+  }
+
+  .mobile_nav ul li:hover .dropdown_menu_mobile{
+    display: block;
+  }
+
+  .mobile_nav a {
+    color: black;
   }
 
   .container_home {
