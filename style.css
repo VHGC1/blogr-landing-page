@@ -200,9 +200,52 @@ nav li:hover .dropdown_menu {
 /* OVERVIEW SECTION */
 
 .overview {
-  background: url(assets/illustration-editor-desktop.svg);
-  background-position: right;
+  font-family: 'Overpass';
+  padding: 174px 0 0 174px;
+}
+
+.overview h1 {
+  text-align: center;
+  margin-bottom: -130px;
+  color: hsl(208, 49%, 24%);
+  font-size: 40px;
+  margin-right: 100px;
+}
+
+.overview_container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.left_col {
+  flex-basis: 50%;
+}
+
+.left_col div:first-of-type {
+  margin-bottom: 50px;
+}
+
+.img_mobile_overview {
   display: none;
+}
+
+.left_col h2 {
+  color: hsl(208, 49%, 24%);
+}
+
+.left_col p {
+  font-size: 16px;
+  color: hsl(207, 13%, 34%);
+  padding-right: 180px;
+}
+
+.right_col {
+  flex-basis: 50%;
+}
+
+.img_desktop_overview {
+  width: 150%;
 }
 
 @media (max-width: 760px){
@@ -218,6 +261,8 @@ nav li:hover .dropdown_menu {
     display: none;
   }
   
+  /* NAV MOBILE */
+
   #mobilemenu {
     display: block;
   }
@@ -225,12 +270,14 @@ nav li:hover .dropdown_menu {
   .mobile_nav {
     position: absolute;
     display: block;
-    text-align: center;
     top: 8.5rem;
-    background-color: var(--white);
-    border-radius: 5px;
     width: 90%;
     padding: 30px 0;
+    border-radius: 5px;
+
+    text-align: center;
+    
+    background-color: var(--white);
     box-shadow: 2px 3px 10px 5px rgba(0,0,0,0.27);
   }
 
@@ -252,10 +299,6 @@ nav li:hover .dropdown_menu {
     display: none;
     background-color: #efeff1;
     border-radius: 5px;
-  }
-
-  .dropdown_menu_mobile ul:first-child {
-    margin-top: 15px;
   }
 
   .dropdown_menu_mobile ul li a{
@@ -316,7 +359,6 @@ nav li:hover .dropdown_menu {
   .mobile_btn .btn_login:hover {
     border: 1px solid hsl(356, 100%, 66%);
     color: hsl(356, 100%, 66%);
-    
     transition: 1s;
   }
 
@@ -326,6 +368,8 @@ nav li:hover .dropdown_menu {
     background: white;
     transition: 1s;
   }
+
+  /* HOME TEXT */
 
   .container_home {
     padding: 100px 25px 150px;
@@ -338,5 +382,45 @@ nav li:hover .dropdown_menu {
 
   .container_home p {
     font-weight: 400;
+  }
+
+  /* OVERVIEW SECTION */
+
+  .overview {
+    padding: 0;
+  }
+  
+  .overview h1 {
+    margin: 100px 0 0 0;
+    font-size: 28px;
+  }
+
+  .overview_container {
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 50px;
+  }
+
+  .img_mobile_overview {
+    display: block;
+    width: 100%;
+    margin: 50px 0;
+  }
+
+  .left_col {
+    text-align: center;
+    padding: 0 40px;
+  }
+
+  .left_col h2 {
+    margin-bottom: 20px;
+  }
+
+  .overview_container p {
+    padding: 0;
+  }
+
+  .img_desktop_overview {
+    display: none;
   }
 }
