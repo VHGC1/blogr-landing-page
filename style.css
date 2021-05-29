@@ -206,11 +206,12 @@ nav li:hover .dropdown_menu {
 .overview {
   background: url(assets/illustration-editor-desktop.svg) no-repeat;
   height: 150vh;
-  background-position: 200% 100%;
   background-size: 70%;
   z-index: 2;
   background-color: white;
   position: relative;
+  padding-bottom: 100px;
+  background-position: 200%;
 }
 
 .overview_container {
@@ -260,8 +261,7 @@ nav li:hover .dropdown_menu {
   padding: 8rem 10rem;
   background-color: hsl(237, 17%, 21%);
   align-items: center;
-  width: 100%;
-  border-radius: 25px 0 25px 0;
+  border-radius: 0px 100px 0 100px;
 }
 
 .services_col_left {
