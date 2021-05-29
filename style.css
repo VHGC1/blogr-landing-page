@@ -10,6 +10,10 @@
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* GLOBAL */
 
 a {
@@ -202,6 +206,10 @@ nav li:hover .dropdown_menu {
 .overview {
   font-family: 'Overpass';
   padding: 174px 0 0 174px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  background-color: var(--white);
 }
 
 .overview h1 {
@@ -246,7 +254,40 @@ nav li:hover .dropdown_menu {
 }
 
 .img_desktop_overview {
-  width: 150%;
+  width: 135%;
+}
+
+/* SERVISES SECTION */
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 8rem 10rem;
+  background-color: hsl(237, 17%, 21%);
+  align-items: center;
+  width: 100%;
+  border-radius: 25px 0 25px 0;
+}
+
+.services_col_left {
+  flex-basis: 40%;
+  position: relative;
+}
+
+.phone {
+  position: absolute;
+  left: -5rem;
+  top: -16rem;
+  z-index: 3;
+}
+
+.pattern_circle {
+  position: absolute;
+  left: -25rem;
+  top: -50rem;
+  z-index: 1;
+  width: 250%;
 }
 
 @media (max-width: 760px){
@@ -422,6 +463,12 @@ nav li:hover .dropdown_menu {
   }
 
   .img_desktop_overview {
+    display: none;
+  }
+
+  /* SERVICES SECTION */
+
+  .services {
     display: none;
   }
 }
