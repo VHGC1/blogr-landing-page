@@ -421,7 +421,8 @@ nav li:hover .dropdown_menu {
 
   .overview {
     padding: 0;
-    background: white;
+    background: var(--white);
+    height: 100%;
   }
 
   .overview_container {
@@ -444,6 +445,7 @@ nav li:hover .dropdown_menu {
   .left_col {
     text-align: center;
     padding: 0 40px;
+    margin-bottom: 50px;
   }
 
   .left_col h2 {
