@@ -208,6 +208,9 @@ nav li:hover .dropdown_menu {
   height: 150vh;
   background-position: 200% 100%;
   background-size: 70%;
+  z-index: 2;
+  background-color: white;
+  position: relative;
 }
 
 .overview_container {
@@ -251,7 +254,7 @@ nav li:hover .dropdown_menu {
 /* SERVISES SECTION */
 
 .services {
-  display: none;
+  display: flex;
   justify-content: space-between;
   position: relative;
   padding: 8rem 10rem;
