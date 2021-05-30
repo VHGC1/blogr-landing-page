@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Ubuntu:wght@400;700&display=swap');
 
 :root {
+  /* PRIMARY */
   --white: hsl(0, 0%, 100%);
-  --light-red: hsl(356, 100%, 66%);
+  --light-red: var(--light-red);
+  --dark-blue: hsl(208, 49%, 24%);
+  /* NEUTRAL */
+  --grayish-blue: hsl(240, 2%, 79%);
+  --dark-grayish-blue: hsl(207, 13%, 34%);
+  --dark-black-blue: hsl(240, 10%, 16%);
+  /* GRADIENT */
+  --very-light-red: hsl(13, 100%, 72%);
+  --back-light-red: hsl(353, 100%, 62%);
+  /* Background gradient */
+  --very-dark-gray-blue: hsl(237, 17%, 21%);
+  --very-dark-desaturated-blue: hsl(237, 23%, 32%);
 }
 
 * {
@@ -28,7 +40,7 @@ a {
 
 .header {
   background: url(assets/bg-pattern-intro.svg);
-  background-image: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-image: linear-gradient(to bottom right, var(--very-light-red), var(--back-light-red));
   border-radius: 0 0 0 75px;
 }
 
@@ -218,7 +230,7 @@ nav li:hover .dropdown_menu {
   text-align: center;
   font-size: 40px;
   margin: 100px 0;
-  color: hsl(208, 49%, 24%);
+  color: var(--dark-blue);
 }
 
 .overview div:first{
@@ -234,20 +246,19 @@ nav li:hover .dropdown_menu {
 .left_col h2 {
   margin-bottom: 20px;
   font-size: 30px;
-  color: hsl(208, 49%, 24%);
+  color: var(--dark-blue);
 }
 
 .left_col p {
   margin-bottom: 25px;
-  color: hsl(207, 13%, 34%);
-  line-height: 1.9;
+  color: var(--dark-grayish-blue);
 }
 
 .img_mobile_overview {
   display: none;
 }
 
-/* SERVISES SECTION */
+/* SERVIcES SECTION */
 
 .services {
   padding-top: 210px;
@@ -261,7 +272,7 @@ nav li:hover .dropdown_menu {
   bottom: 0;
   height: 75%;
   width: 100%;
-  background-color: hsl(237, 17%, 21%);
+  background-color: var(--very-dark-gray-blue);
   border-radius: 0px 100px 0 100px;
   overflow: hidden;
 }
@@ -330,7 +341,7 @@ nav li:hover .dropdown_menu {
 
 .features_text h2 {
   margin-top: 50px;
-  color: hsl(208, 49%, 24%);
+  color: var(--dark-blue);
   font-size: 30px;
 }
 
@@ -341,8 +352,9 @@ nav li:hover .dropdown_menu {
 .features_text p {
   margin-bottom: 50px;
   padding-top: 24px;
-  color: hsl(207, 13%, 34%);
+  color: var(--dark-grayish-blue);
   padding-right: 150px;
+  line-height: 1.9;
 }
 
 
@@ -350,7 +362,7 @@ nav li:hover .dropdown_menu {
 /* FOOTER */
 
 footer {
-  background-color: hsl(240, 10%, 16%);
+  background-color: var(--dark-black-blue);
   padding: 80px 0 100px 0px;
   border-top-right-radius: 100px;
   font-family: 'Ubuntu';
@@ -372,18 +384,18 @@ footer {
 }
 
 .menu_footer ul li a {
-  color: hsl(240, 2%, 79%);
+  color: var(--grayish-blue);
 }
 
 .challenge {
   display: none;
   text-align: center;
-  background-color: hsl(240, 10%, 16%);
+  background-color: var(--dark-black-blue);
   padding-bottom: 25px;
 }
 
 .challenge {
-  color: hsl(356, 100%, 66%);
+  color: var(--light-red);
 }
 
 @media (max-width: 760px){
@@ -441,7 +453,7 @@ footer {
 
   .dropdown_menu_mobile ul li a{
     font-size: 18px;
-    color: hsl(208, 49%, 24%) !important;
+    color: var(--dark-blue) !important;
   }
 
   .mobile_nav ul li:hover .dropdown_menu_mobile{
@@ -449,7 +461,7 @@ footer {
   }
 
   .mobile_nav a {
-    color: hsl(208, 49%, 24%);
+    color: var(--dark-blue);
     font-family: 'Overpass';
     font-weight: bold;
   }
@@ -481,7 +493,7 @@ footer {
 
   .mobile_btn .btn_signup {
     padding: 15px 45px;
-    background: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background: linear-gradient(to bottom right, var(--very-light-red), var(--back-light-red));
     color: var(--white);
     border-radius: 40px;
   }
@@ -495,14 +507,14 @@ footer {
   }
 
   .mobile_btn .btn_login:hover {
-    border: 1px solid hsl(356, 100%, 66%);
-    color: hsl(356, 100%, 66%);
+    border: 1px solid var(--light-red);
+    color: var(--light-red);
     transition: 1s;
   }
 
   .mobile_btn .btn_signup:hover {
-    border: 1px solid hsl(356, 100%, 66%);
-    color: hsl(356, 100%, 66%);
+    border: 1px solid var(--light-red);
+    color: var(--light-red);
     background: white;
     transition: 1s;
   }
@@ -548,7 +560,7 @@ footer {
 
   .left_col h2 {
     margin-bottom: 20px;
-    color: hsl(208, 49%, 24%);
+    color: var(--dark-blue);
   }
 
   .left_col div:not(:first-of-type) h2{
@@ -625,6 +637,7 @@ footer {
 
   .features_text p {
     padding: 0 40px;
+    line-height: 1.9;
   }
 
   /* FOOTER */
@@ -636,6 +649,15 @@ footer {
   }
 
   .container_footer div:first-of-type img{
-    margin-bottom: 80px;
+    margin-bottom: 20px;
+  }
+
+  #menu_footer_option {
+    margin-top: 30px;
+  }
+
+  .challenge {
+    display: block;
+    text-align: center;
   }
 }
