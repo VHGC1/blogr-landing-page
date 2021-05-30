@@ -31,8 +31,6 @@ Users should be able to:
 - Solution URL: [URL here](https://your-solution-url.com)
 - Live Site URL: [URL here](https://blogr-landing-page-vhgc.netlify.app/)
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
