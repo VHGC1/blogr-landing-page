@@ -418,6 +418,7 @@ footer {
 
   .mobile_nav {
     position: absolute;
+    z-index: 1;
     display: block;
     top: 8.5rem;
     width: 90%;
